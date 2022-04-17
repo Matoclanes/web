@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/index.css">
+
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <a href="./MODELOS/mujer.html" class="swiper-slide">
+          <h2 class="absoluto">Calzoncillos</h2>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_726393-MLC46471906318_062021-O.webp" alt="">
+        </a>
+        <div class="swiper-slide">}
+          <h2 class="absoluto">Pijamas</h2>
+          <img src="https://www.dhresource.com/webp/m/0x0/f2/albu/g9/M00/3D/04/rBVaVV7Jx4GAOS3bAAMfj2kgL_c693.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <h2 class="absoluto">Camisetas</h2>
+          <img src="https://www.paris.cl/dw/image/v2/BCHW_PRD/on/demandware.static/-/Sites-paris-marketplace/default/dwce86c0cd/images/imagenes-productos/800/MK6N/MK6NIAMMPP-001.jpg?sw=1480&sh=2000&sm=fit" alt="">
+        </div>
+        <div class="swiper-slide">
+          <h2 class="absoluto">Calcetines</h2>
+          <img src="https://cdn.pixabay.com/photo/2019/08/22/19/09/odd-socks-4424190_960_720.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../JAVASCRIPT/SWIPER/Swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
